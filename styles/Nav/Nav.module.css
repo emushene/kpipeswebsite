@@ -1,0 +1,12 @@
+.container {
+    background-color: orange;
+    display: flex;
+     flex-wrap: nowrap;
+    min-width: 100%;
+    min-height: max-content;
+}
+
+
+.menu {
+    display: none;
+}
