@@ -1,7 +1,7 @@
-import styles from "../styles/Toplogo.module.css";
+import styles from "../../styles/Nav/Toplogo.module.css";
 import Link from "next/link";
 import * as React from "react";
-import { SearchRounded } from "@mui/icons-material";
+
 
 const Toplogo = () => {
   return (
@@ -35,7 +35,7 @@ const Toplogo = () => {
               placeholder="Search KPFC?"
             />
             <button type="submit" className={styles.searchButton}>
-              <i><SearchRounded /></i>
+              <i>icon here</i>
             </button>
           </div>
         </div>

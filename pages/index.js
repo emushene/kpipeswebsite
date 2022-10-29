@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home/Home.module.css'
+import Intro from "../component/Home/Intro"
+import Shop from "../component/Shop/Shop"
 
 
 
@@ -13,10 +15,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div style={styles.intro}>
-       
-
-        </div>
+      <Intro />
+      <Shop />
         
 
       </main>

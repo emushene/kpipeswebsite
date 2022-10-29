@@ -1,0 +1,250 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   max-width: 100%;
+   
+    
+}
+
+.topTitle {
+border: 1px solid grey;
+align-items: center;
+justify-content: center;
+
+
+}
+.topTitle h2 {
+    color: blue;
+    text-align: center;
+}
+
+.prodCategory {
+    margin: 1em 6em 0em 6em;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    border: 1px solid grey;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    border: 1px solid pink;
+    }
+    .div2 { grid-area: 1 / 4 / 3 / 5; 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 250px;
+        border: 1px solid grey;
+        
+    
+    }
+    .div2 h1 {
+        position: absolute;
+        text-align: center;
+        color: white;
+        top: 10%;
+        padding: 1em;
+    }
+    .div2 button { position: absolute;
+        top: 90%;
+        left: 34%;
+        margin-bottom: 1em;
+        border: none;
+        background-color: blue;
+       width: max-content;
+        border-radius: 20px;
+        cursor: pointer;
+        color: orange;
+        
+    }
+    
+    .div3 { grid-area: 2 / 1 / 3 / 2; 
+        display: flex;
+        border: 1px solid grey;
+    
+    }
+    .div4 { grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        border: 1px solid grey;
+    
+    }
+    .div5 { grid-area: 2 / 3 / 3 / 4;
+        display: flex;
+        border: 1px solid grey;
+    
+    }
+
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 4; }
+        .div2 { grid-area: 1 / 4 / 3 / 5; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+        .div5 { grid-area: 2 / 3 / 3 / 4; }
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 1em;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 4; }
+        .div2 { grid-area: 1 / 4 / 3 / 5; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+        .div5 { grid-area: 2 / 3 / 3 / 4; }
+
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+ 
+  
+
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+       max-width: 100%;
+       
+        
+    }
+    
+    .topTitle {
+
+    align-items: center;
+    justify-content: center;
+    
+    
+    }
+    .topTitle h2 {
+        color: blue;
+        text-align: center;
+        margin-bottom: -0.1em;
+    }
+    
+    .prodCategory {
+        margin: 1em 2em 0em 2em;
+        margin-bottom: -0.3em;
+        max-height:5em ;
+        overflow: hidden;
+    }
+
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0.2em;
+        grid-row-gap: 0.2em;
+        border: 1px solid grey;
+        max-height: max-content;
+        overflow: hidden;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 4;
+        display: flex;
+        border: 1px solid pink;
+        
+        }
+        .div1 h2 {
+            font-size: 1em;
+            color: blue;
+            max-height: 2em;
+
+        }
+        .div2 { grid-area: 1 / 4 / 3 / 5; 
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 150px;
+            max-height: 5em;
+            border: 1px solid grey;
+            
+        
+        }
+        .div2 h1 {
+            position: absolute;
+            text-align: center;
+            color: white;
+            top: 50%;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        .div2 button { position: absolute;
+            top: 240%;
+            left: 34%;
+            margin-bottom: 1em;
+            border: none;
+            background-color: blue;
+           width: max-content;
+            border-radius: 20px;
+            cursor: pointer;
+            color: orange;
+            
+        }
+        
+        .div3 { grid-area: 2 / 1 / 3 / 2; 
+            display: flex;
+            border: 1px solid grey;
+            
+        
+        }
+        .div4 { grid-area: 2 / 2 / 3 / 3;
+            display: flex;
+            border: 1px solid grey;
+    
+        
+        }
+        .div5 { grid-area: 2 / 3 / 3 / 4;
+            display: flex;
+            border: 1px solid grey;
+            max-height: 4em;
+        
+        }
+    
+    
+  
+}

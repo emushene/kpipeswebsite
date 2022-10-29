@@ -1,0 +1,261 @@
+/* Create a flex container */
+.hero {
+    display: flex;
+    height: 1em;
+    min-width: 100%;
+    flex-flow: row nowrap; /* make the two divs side by side */
+    position: relative;
+    
+  
+  
+   
+  }
+  
+  /* apply basic styles to the divs */
+  .hero div {
+    display: flex;
+    position: relative;
+    padding: 50px;
+  }
+  
+  .hero_1 {
+    background-color: #f57200;
+    width: 70%;
+    padding: 0%;
+
+    
+  }
+  .hero_2 {
+    background-color:  rgb(5, 81, 196);
+    width: 30%;
+ 
+    
+  }
+  .hero_2 h2 {
+      color: white;
+      cursor: pointer;
+      
+  }
+  /* + 100px for :after and :before to fit
+   + 10px for the space we really want to see between diagonal */
+  .hero div:first-child {
+    margin-right: 10px;
+  }
+  
+  .hero_1:after,
+  .hero_2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: o#f57200;
+    
+  }
+  
+  /* Add a triangle at the end and starts of both divs to simulate diagonal */
+  .hero_1:after {
+    left: 100%;
+    border-top: 100px solid #f57200;
+    border-right: 100px solid transparent;
+  }
+  .hero_2:before {
+    right: 100%;
+    border-bottom: 100px solid  rgb(5, 81, 196);
+    border-left: 100px solid transparent;
+    
+  }
+  
+  
+  /*desktops - higher resolution*/
+@media (min-width: 1281px) {
+
+/* Create a flex container */
+.hero {
+  display: flex;
+  max-height: 1em;
+  min-width: 100%;
+  flex-flow: row nowrap; /* make the two divs side by side */
+  position: relative;
+  
+
+
+ 
+}
+
+/* apply basic styles to the divs */
+.hero div {
+  display: flex;
+  position: relative;
+  padding: 50px;
+}
+
+.hero_1 {
+  background-color: #f57200;
+  width: 70%;
+  padding: 0%;
+  
+}
+.hero_1 h1 {
+  color: rgb(5, 81, 196);
+  cursor: pointer;
+  margin-top: -1em;
+  
+}
+
+
+
+.hero_2 {
+  background-color:  rgb(5, 81, 196);
+  width: 30%;
+
+  
+}
+.hero_2 h1 {
+    color: orange;
+    cursor: pointer;
+    margin-top: -1em;
+    
+}
+/* + 100px for :after and :before to fit
+ + 10px for the space we really want to see between diagonal */
+.hero div:first-child {
+  margin-right: 10px;
+}
+
+.hero_1:after,
+.hero_2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: o#f57200;
+  
+}
+
+/* Add a triangle at the end and starts of both divs to simulate diagonal */
+.hero_1:after {
+  left: 100%;
+  border-top: 100px solid #f57200;
+  border-right: 100px solid transparent;
+}
+.hero_2:before {
+  right: 100%;
+  border-bottom: 100px solid  rgb(5, 81, 196);
+  border-left: 100px solid transparent;
+  
+}
+
+
+
+
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+/* Create a flex container */
+.hero {
+    display: flex;
+    height: 1em;
+    min-width: 100%;
+    flex-flow: row nowrap; /* make the two divs side by side */
+    position: relative;
+    
+  
+  
+   
+  }
+  
+  /* apply basic styles to the divs */
+  .hero div {
+    display: flex;
+    position: relative;
+    padding: 50px;
+  }
+  
+  .hero_1 {
+    background-color: #f57200;
+    width: 70%;
+    padding: 0%;
+
+    
+  }
+
+  .hero_1 h1 {
+    color: rgb(5, 81, 196);
+    cursor: pointer;
+    font-size: 1.8em;
+    margin-top: -0.8em;
+    
+}
+  .hero_2 {
+    background-color:  rgb(5, 81, 196);
+    width: 30%;
+ 
+    
+  }
+  .hero_2 h1 {
+      color: orange;
+      cursor: pointer;
+      margin-top: -0.8em;
+      
+  }
+  /* + 100px for :after and :before to fit
+   + 10px for the space we really want to see between diagonal */
+  .hero div:first-child {
+    margin-right: 10px;
+  }
+  
+  .hero_1:after,
+  .hero_2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: o#f57200;
+    
+  }
+  
+  /* Add a triangle at the end and starts of both divs to simulate diagonal */
+  .hero_1:after {
+    left: 100%;
+    border-top: 100px solid #f57200;
+    border-right: 100px solid transparent;
+  }
+  .hero_2:before {
+    right: 100%;
+    border-bottom: 100px solid  rgb(5, 81, 196);
+    border-left: 100px solid transparent;
+    
+  }
+
+
+
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+ 
+  
+
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  
+}
